@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "599043108427",
+    "project_id": "animaldbforproject",
+    "storage_bucket": "animaldbforproject.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599043108427:android:299029c910afab7955e7ce",
+        "android_client_info": {
+          "package_name": "com.example.daniellitvakproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBecyrHJ7ELygfJRhpsB4FaJR2VYi2cfwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

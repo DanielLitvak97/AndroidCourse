@@ -1,0 +1,65 @@
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+
+    app:startDestination="@id/fragmentWelcomeMain">
+
+
+    <fragment
+        android:id="@+id/fragmentAnimalList"
+        android:name="com.example.daniellitvakproject.FragmentAnimalList"
+        android:label="Animal List"
+        tools:layout="@layout/fragment_animal_list">
+
+
+        <action
+            android:id="@+id/action_fragmentAnimalList_to_fragmentAnimalInfo"
+            app:destination="@id/fragmentAnimalInfo"/>
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/fragmentAnimalInfo"
+        android:name="com.example.daniellitvakproject.FragmentAnimalInfo"
+        android:label="Animal Info"
+        tools:layout="@layout/fragment_animal_info"/>
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.example.daniellitvakproject.FragmentLogin"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentRegister"
+            app:destination="@id/fragmentRegister" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentAnimalList"
+            app:destination="@id/fragmentAnimalList" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRegister"
+        android:name="com.example.daniellitvakproject.FragmentRegister"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_fragmentRegister_to_fragmentLogin"
+            app:destination="@id/fragmentLogin"
+            app:popUpTo="@id/fragmentRegister"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWelcomeMain"
+        android:name="com.example.daniellitvakproject.FragmentWelcomeMain"
+        android:label="fragment_welcome_main"
+        tools:layout="@layout/fragment_welcome_main" >
+        <action
+            android:id="@+id/action_fragmentWelcomeMain_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+
+
+</navigation>
